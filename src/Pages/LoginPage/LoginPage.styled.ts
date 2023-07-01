@@ -13,7 +13,7 @@ export const Section = styled.div`
 `;
 
 export const Title = styled.h2`
-  margin-bottom: ${(p) => p.theme.space[10]}px;
+  margin-bottom: ${(p) => p.theme.space[2]}px;
   padding-bottom: ${(p) => p.theme.space[1]}px;
 
   font-family: "Segoe UI";
@@ -27,6 +27,7 @@ export const Title = styled.h2`
   color: ${(p) => p.theme.colors.brownSecond};
 
   @media screen and (min-width: 400px) {
+    margin-bottom: ${(p) => p.theme.space[10]}px;
     font-size: 30px;
   }
 `;

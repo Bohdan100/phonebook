@@ -7,18 +7,22 @@ export const Section = styled.div`
   margin-top: ${(p) => p.theme.space[4]}px;
 `;
 
-export const Title = styled.h1`
-  margin-bottom: ${(p) => p.theme.space[4]}px;
-  text-align: ${(p) => p.theme.position.center};
+export const Title = styled.h2`
+  margin-bottom: ${(p) => p.theme.space[2]}px;
+  padding-bottom: ${(p) => p.theme.space[1]}px;
+
+  font-family: "Segoe UI";
   font-weight: ${(p) => p.theme.fontWeights.bold};
   font-size: ${(p) => p.theme.fontSizes.l};
   line-height: ${(p) => p.theme.lineHeights.thick};
   letter-spacing: 0.03em;
-  padding-bottom: 6px;
+
+  text-align: ${(p) => p.theme.position.center};
   border-bottom: 1px solid ${(p) => p.theme.colors.brownSecond};
   color: ${(p) => p.theme.colors.brownSecond};
 
   @media screen and (min-width: 400px) {
+    margin-bottom: ${(p) => p.theme.space[4]}px;
     font-size: 30px;
   }
 `;

@@ -5,7 +5,7 @@ export const ContactWrap = styled.li`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: ${(p) => p.theme.space[2]}px;
+  padding: ${(p) => p.theme.space[1]}px;
 
   font-family: "Segoe UI";
   font-weight: ${(p) => p.theme.fontWeights.normal};
@@ -16,6 +16,10 @@ export const ContactWrap = styled.li`
 
   &:not(:last-child) {
     margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 767px) {
+    padding: ${(p) => p.theme.space[2]}px;
   }
 
   @media screen and (min-width: 1024px) {

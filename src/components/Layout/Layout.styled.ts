@@ -22,7 +22,7 @@ export const CardWrap = styled.div`
 
 export const Card = styled.div`
   width: 100%;
-  height: 75vh;
+  height: 72vh;
 
   margin-top: ${(p) => p.theme.space[2]}px;
   margin-bottom: ${(p) => p.theme.space[2]}px;
@@ -43,6 +43,7 @@ export const Card = styled.div`
 
   @media screen and (min-width: 700px) {
     width: 40%;
+    height: 75vh;
     margin-top: ${(p) => p.theme.space[8]}px;
     margin-bottom: ${(p) => p.theme.space[5]}px;
     margin-right: 10%;
